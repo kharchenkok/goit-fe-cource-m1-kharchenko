@@ -1,3 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  width: 901px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  color: #626262;
+  font-size: 14px;
+  line-height: 24px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -7,4 +29,111 @@
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+.main-header {
+  margin-bottom: 25px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+}
+.main-nav {
+  font-size: 14px;
+  padding: 77px 0;
+  height: 168px;
+}
+
+.main-nav a {
+  font-family: "Playfair Display", serif;
+  color: #626262;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+.main-menu li {
+  display: inline-block;
+}
+
+.main-menu li:not(:last-child) {
+  margin-right: 110px;
+}
+
+.main-menu li:first-child a:hover,
+.main-menu li:first-child a:focus {
+  color: #03a9f4;
+}
+
+.elements-list {
+  list-style: none;
+  margin: 0 0 52px 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.elements-list-item {
+  width: 420px;
+  display: inline-block;
+  margin-right: 60px;
+  text-align: left;
+  margin-bottom: 130px;
+}
+
+.elements-list-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.elements-list-item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
+.elements-title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #b4ad9e;
+  margin-bottom: 28px;
+}
+
+.elements-list-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  margin-bottom: 34px;
+}
+
+.elements-list-descr {
+  font-size: 14px;
+}
+
+.load-button {
+  margin: 0;
+  padding: 20px 34px;
+  font-size: 20px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 24px;
+  border-width: 1px;
+  border-color: rgb(98, 98, 98);
+  border-style: solid;
+  background-color: #ffffff;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
