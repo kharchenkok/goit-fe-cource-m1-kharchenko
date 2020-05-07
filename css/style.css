@@ -75,6 +75,9 @@ img {
   color: #03a9f4;
 }
 
+.main-content-elements {
+  margin-bottom: 70px;
+}
 .elements-list {
   list-style: none;
   margin: 0 0 52px 0;
