@@ -10,7 +10,7 @@ html {
 
 .wrapper {
   width: 901px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 body {
@@ -33,9 +33,10 @@ body {
 
 .main-header {
   margin-bottom: 25px;
+  height: 168px;
 }
 
-img {
+.pictures {
   display: block;
   max-width: 100%;
   height: auto;
@@ -44,7 +45,6 @@ img {
 .main-nav {
   font-size: 14px;
   padding: 77px 0;
-  height: 168px;
 }
 
 .main-nav a {
@@ -53,6 +53,8 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   text-decoration: none;
+  font-size: 14px;
+  display: block;
 }
 
 .main-menu {
@@ -61,6 +63,7 @@ img {
   padding: 0;
   vertical-align: middle;
   text-align: center;
+  font-size: 0;
 }
 .main-menu li {
   display: inline-block;
@@ -70,17 +73,17 @@ img {
   margin-right: 110px;
 }
 
-.main-menu li:first-child a:hover,
-.main-menu li:first-child a:focus {
+.main-menu-link:hover {
   color: #03a9f4;
 }
 
 .main-content-elements {
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 }
 .elements-list {
   list-style: none;
-  margin: 0 0 52px 0;
+  margin: 0;
+  margin-bottom: 52px;
   padding: 0;
   font-size: 0;
 }
@@ -108,6 +111,7 @@ img {
   text-transform: uppercase;
   font-weight: 300;
   color: #b4ad9e;
+  margin: 0;
   margin-bottom: 28px;
 }
 
@@ -116,10 +120,12 @@ img {
   line-height: 36px;
   font-family: "Playfair Display";
   font-weight: 400;
+  margin: 0;
   margin-bottom: 34px;
 }
 
 .elements-list-descr {
+  margin: 0;
   font-size: 14px;
 }
 
