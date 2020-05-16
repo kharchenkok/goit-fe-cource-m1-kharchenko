@@ -1,0 +1,286 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.content-envelopment {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.site-pictures {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/*page-header-style*/
+.page-header {
+  width: 1110px;
+  height: 96px;
+  margin: 0 auto;
+  margin-bottom: 59px;
+}
+
+.site-logo-name {
+  margin: 0;
+  padding: 0;
+}
+
+.site-logo-name a {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 36px;
+  color: #555252;
+}
+.site-logo-name a::first-letter {
+  font-weight: 900;
+  color: #1abc9c;
+}
+
+h1 {
+  display: inline-block;
+}
+.site-navigation-list {
+  float: right;
+  width: 505px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 11px;
+}
+
+.site-navigation-list li {
+  float: left;
+  margin-right: 36px;
+}
+
+.site-navigation-list li:last-child {
+  margin-right: 0;
+}
+.site-navigation-elements a {
+  text-decoration: none;
+  color: #0f0100;
+}
+
+.site-navigation-elements a:hover,
+.site-navigation-elements a:focus {
+  color: #1abc9c;
+}
+
+.site-navigation {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/*FEATURED-PRODUCTS-STYLE*/
+.products-section {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 101px;
+}
+
+.product-elements {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.product-elements a {
+  text-decoration: none;
+}
+
+.product-elements-list {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.product-elements-list:nth-child(4n) {
+  margin-right: 0;
+}
+
+.product-elements-list:nth-last-child(-n + 4) {
+  margin-bottom: 0;
+}
+
+.product-elements-name {
+  float: left;
+  width: 201px;
+  background-color: #323232;
+  height: 40px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+  padding-top: 4px;
+  padding-left: 10px;
+}
+
+.product-elements-price {
+  float: right;
+  width: 54px;
+  background-color: #8c8c8c;
+  height: 40px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+  text-align: center;
+  padding-top: 2px;
+}
+
+.product-elements-price::before {
+  content: "\0024";
+}
+
+.product:hover .product-elements-name {
+  background-color: #1abc9c;
+}
+
+.product:hover .product-elements-price {
+  background-color: #7fd9c7;
+}
+
+/*LATEST-NEWS-STYLE*/
+.news-section {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 46px;
+}
+
+.news-elements {
+  margin: 0;
+  padding: 0;
+}
+
+.news-elements-title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+.news-elements-text {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 18px;
+  text-align: left;
+}
+
+.news-section p {
+  color: #555252;
+}
+
+.news-elements li {
+  float: left;
+  list-style: none;
+  width: 350px;
+  margin: 0;
+  padding: 0;
+}
+
+.news-elements li {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.news-elements li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.news-elements li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.news-elements-list img {
+  padding-bottom: 15px;
+}
+
+.news-elements-title::after {
+  display: block;
+  content: "";
+  width: 136px;
+  height: 5px;
+  background-color: #1abc9c;
+  margin: 0;
+  margin-top: 15px;
+}
+
+/*button-style*/
+.read-more-button {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  line-height: 26px;
+  height: 51px;
+  width: 160px;
+  background-color: #4ec6ab;
+  font-weight: 300;
+  cursor: pointer;
+  position: left;
+  border: 0;
+  border-radius: 4px;
+}
+
+.read-more-button:hover {
+  color: #8c8c8c;
+  background-color: aquamarine;
+  border: 0;
+}
+
+/*h2-style*/
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 58px;
+  color: #515151;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 85px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 164px;
+  height: 7px;
+  background-color: rgb(26, 188, 156);
+  margin: 0 auto;
+  margin-top: 33px;
+}
