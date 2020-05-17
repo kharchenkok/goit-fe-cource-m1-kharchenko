@@ -28,9 +28,13 @@ html {
 /*page-header-style*/
 .page-header {
   width: 1110px;
-  height: 96px;
   margin: 0 auto;
   margin-bottom: 59px;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
 }
 
 .site-logo-name {
@@ -88,11 +92,6 @@ h1 {
   color: #1abc9c;
 }
 
-.site-navigation {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
 /*FEATURED-PRODUCTS-STYLE*/
 .products-section {
   font-family: "Roboto", sans-serif;
@@ -100,7 +99,7 @@ h1 {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-bottom: 101px;
+  padding-bottom: 101px;
 }
 
 .product-elements {
@@ -117,6 +116,7 @@ h1 {
   float: left;
   margin-right: 30px;
   margin-bottom: 30px;
+  background-color: #e9f0fd;
 }
 .product-elements-list:nth-child(4n) {
   margin-right: 0;
@@ -136,7 +136,7 @@ h1 {
   line-height: 32px;
   margin: 0;
   padding: 0;
-  padding-top: 4px;
+  padding-top: 5px;
   padding-left: 10px;
 }
 
@@ -150,11 +150,19 @@ h1 {
   line-height: 32px;
   margin: 0;
   text-align: center;
-  padding-top: 2px;
+  padding-top: 4px;
 }
 
 .product-elements-price::before {
   content: "\0024";
+}
+
+.product {
+  width: 255px;
+  font-size: 0;
+}
+.product a {
+  display: inline-block;
 }
 
 .product:hover .product-elements-name {
@@ -184,7 +192,7 @@ h1 {
   font-weight: 600;
   margin: 0;
   padding: 0;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   text-align: left;
 }
 
@@ -194,7 +202,7 @@ h1 {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  padding-bottom: 18px;
+  margin-bottom: 18px;
   text-align: left;
 }
 
@@ -208,9 +216,6 @@ h1 {
   width: 350px;
   margin: 0;
   padding: 0;
-}
-
-.news-elements li {
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -224,7 +229,7 @@ h1 {
 }
 
 .news-elements-list img {
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .news-elements-title::after {
@@ -238,7 +243,8 @@ h1 {
 }
 
 /*button-style*/
-.read-more-button {
+.read-more a {
+  display: inline-block;
   margin: 0;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
@@ -248,18 +254,19 @@ h1 {
   width: 160px;
   background-color: #4ec6ab;
   font-weight: 300;
-  cursor: pointer;
   position: left;
   border: 0;
   border-radius: 4px;
+  text-align: center;
+  padding-top: 12px;
+  text-decoration: none;
 }
 
-.read-more-button:hover {
+.read-more a:hover {
   color: #8c8c8c;
   background-color: aquamarine;
   border: 0;
 }
-
 /*h2-style*/
 
 h2 {
