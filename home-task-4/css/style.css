@@ -85,6 +85,7 @@ h1 {
 .site-navigation-elements a {
   text-decoration: none;
   color: #0f0100;
+  display: block;
 }
 
 .site-navigation-elements a:hover,
