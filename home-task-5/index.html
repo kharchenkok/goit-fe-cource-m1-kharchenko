@@ -9,14 +9,17 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/Icon-font-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="./css/Icon-font-7-stroke/css/helper.css">
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="page-header">        
+    <header class="page-header"> 
+      <h1 class="visually-hidden">Mart-page</h1>      
         <div class="container">
-         <nav class="page-navigation">
-            <a class="site-logo-link" href="#">Mart</a>
-            <ul class="navigation-list">
+         <nav class="page-navigation clearfix">
+            <a class="site-logo-link" href="#"> <span class="logo-name">Mart</span></a>
+            <ul class="navigation-list clearfix">
                 <li class="nav-list-item">
                     <a class="nav-item-link" href="#">Home</a>
                 </li>
@@ -31,49 +34,99 @@
     </header>
     <main>
         <section class="slider">
+          <div slider-picture-wrapper>
+            <img class="slider-picture" src="./img/slider/slider-pic.png " alt="some girls" width="1600" height="600">
+          </div>
           <div class="container">
-            <h1 class="slider-title">AFFORDABLE PARIS TOURS</h1>
+            <h2 class="slider-title">AFFORDABLE PARIS TOURS</h2>
             <p class="slider-description">CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
+            <div class="button-wrapper">
+              <button>right</button>
+              <button> left</button>
+            </div>
           </div>
         </section>
-        <section class="collection-section">
+        <section class="collection-section clearfix ">
           <div class="container">
-            <h2 class="collection-title">NEW COLLECTION</h2>
-            <ul class="collection-list">
+            <h3 class="collection-title">NEW COLLECTION</h3>
+            <ul class="collection-list clearfix">
               <li class="collection-list-item">
                 <div class="collection-elements">
-                  <img class="collection-pictures" src="./img/collection/1.png" alt="Men's Blue Tshirt" width="242" height="280">
-                  <a class="collection-elements-link" href="#">
-                   <h3 class="collection-elements-name">Blue Tshirt</h3>
-                  </a>
-                  <p class="collection-elements-price"></p>
+                  <div class="pictures-wrapper">
+                    <img class="collection-pictures" src="./img/collection/1.png" alt="Men's Blue Tshirt" width="255" height="280">
+                    <div class="overlay">
+                      <ul class="button-list">
+                        <li class="button-item">
+                          <button class="button"><i class="pe-7s-like pe-3x pe-va"></i></button>
+
+                        </li>
+                        <li class="button-item">
+                          <button class="button"><i class="pe-7s-shuffle pe-3x pe-va"></i></button>
+
+                        </li>
+                        <li class="button-item">
+                          <button class="button"><i class="pe-7s-clock pe-3x pe-va"></i></button>
+
+                        </li>
+                        <li class="button-item">
+                          <button class="button-cart"><i class="pe-7s-cart pe-3x pe-va"><span class="button-add">add to cart</span></i></button>
+
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+                  <div class="collection-item-options">
+                    <a class="collection-elements-link" href="#">
+                     <h4 class="collection-elements-name">Blue Tshirt</h4>
+                    </a>
+                    <div class="price">
+                      <p class="collection-elements-price">$26</p>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="collection-list-item">
                 <div class="collection-elements">
-                  <img class="collection-pictures" src="./img/collection/2.png" alt="Woman Shirt" width="242" height="280">
-                  <a class="collection-elements-link" href="#">
-                    <h3 class="collection-elements-name">WOMAN shirt</h3>
-                  </a>
-                  <p class="collection-elements-price">$31</p>
+                  <img class="collection-pictures" src="./img/collection/2.png" alt="Woman Shirt" width="255" height="280">
+                  <div class="collection-item-options">
+                    <a class="collection-elements-link" href="#">
+                      <h4 class="collection-elements-name">WOMAN shirt</h4>
+                    </a>
+                    <div class="price">
+                      <p class="collection-elements-price">$31</p>
+                    </div>
+
+                  </div>
                 </div>
               </li>
               <li class="collection-list-item">
                 <div class="collection-elements">
-                  <img class="collection-pictures" src="./img/collection/3.png" alt="Men's Yellow Tshirt" width="242" height="280">
-                  <a class="collection-elements-link" href="#">
-                    <h3 class="collection-elements-name">YELLOW Tshirt</h3>
-                  </a>
-                  <p class="collection-elements-price">$21</p>
+                  <img class="collection-pictures" src="./img/collection/3.png" alt="Men's Yellow Tshirt" width="255" height="280">
+                  <div class="collection-item-options">
+                    <a class="collection-elements-link" href="#">
+                      <h4 class="collection-elements-name">YELLOW Tshirt</h4>
+                    </a>
+                    <div class="price">
+                      <p class="collection-elements-price">$21</p>
+                    </div>
+
+                  </div>
                 </div>
               </li>
               <li class="collection-list-item">
                 <div class="collection-elements">
-                  <img class="collection-pictures" src="./img/collection/4.png" alt="Woman Lingerie" width="242" height="280">
-                  <a class="collection-elements-link"href="#">
-                    <h3 class="collection-elements-name">Cool lingerie</h3>
-                  </a>
-                  <p class="collection-elements-price">$56</p>
+                  <img class="collection-pictures" src="./img/collection/4.png" alt="Woman Lingerie" width="255" height="280">
+                  <div class="collection-item-options">
+                    <a class="collection-elements-link"href="#">
+                      <h4 class="collection-elements-name">Cool lingerie</h4>
+                    </a>
+                    <div class="price">
+                      <p class="collection-elements-price">$56</p>
+
+                    </div>
+
+                  </div>
                 </div>
               </li>
             </ul>
