@@ -100,10 +100,9 @@ img {
   width: 100%;
   object-position: top;
   object-fit: cover;
-  position: relative;
 }
 
-.slider {
+.wrapper {
   position: relative;
 }
 .slider::before {
@@ -118,6 +117,8 @@ img {
 .button-wrapper {
   position: absolute;
   width: 100%;
+  top: 0;
+  left: 0;
 }
 .slider-button-prev {
   float: left;
@@ -129,25 +130,13 @@ img {
 }
 
 .slider-button-next {
-  float: left;
+  float: right;
   width: 108px;
   height: 108px;
   border: none;
   background-color: #4dc5ab;
   color: #ffffff;
 }
-/*.slider-ctrl:hover,
-.slider-ctrl:focus {
-  opacity: 1;
-}
-
-.prev {
-  float: left;
-}
-
-.next {
-  float: right;
-}*/
 
 .slider-items {
   position: absolute;
@@ -168,7 +157,6 @@ img {
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 10px;
-  /*white-space: nowrap;*/
 }
 .slider-description {
   float: left;
@@ -182,15 +170,6 @@ img {
   max-width: 900px;
   margin-bottom: 10px;
 }
-/*image::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 600px;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 2, 0.52);
-}*/
 
 /*collection-style*/
 
@@ -222,7 +201,6 @@ img {
 
 .collection-list-item {
   width: 255px;
-
   float: left;
   margin-right: 30px;
   margin-bottom: 100px;
