@@ -4,184 +4,271 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>homework-05-kharchenko</title>
-    <link rel="stylesheet" href="./css/normalize.css" />    
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/Icon-font-7-stroke/css/pe-icon-7-stroke.css">
-    <link rel="stylesheet" href="./css/Icon-font-7-stroke/css/helper.css">
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/Icon-font-7-stroke/css/pe-icon-7-stroke.css"
+    />
+    <link rel="stylesheet" href="./css/Icon-font-7-stroke/css/helper.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="page-header"> 
-      <h1 class="visually-hidden">Mart-page</h1>      
-        <div class="container">
-         <nav class="page-navigation clearfix">
-            <a class="site-logo-link" href="#"> <span class="logo-name">Mart</span></a>
-            <ul class="navigation-list clearfix">
-                <li class="nav-list-item">
-                    <a class="nav-item-link" href="#">Home</a>
-                </li>
-                <li class="nav-list-item"><a class="nav-item-link" href="#">About Us</a></li>
-                <li class="nav-list-item"><a class="nav-item-link"href="#">Page</a></li>
-                <li class="nav-list-item"><a class="nav-item-link"href="#">Shop</a></li>
-                <li class="nav-list-item"><a class="nav-item-link" href="#">Blog</ac></li>
-                <li class="nav-list-item"><a class="nav-item-link"href="#">Contact us</a></li>
+    <header class="page-header">
+      <h1 class="visually-hidden">Mart-page</h1>
+      <div class="container">
+        <nav class="page-navigation clearfix">
+          <a class="site-logo-link" href="#"
+            ><span class="logo-name">Mart</span></a
+          >
+          <ul class="navigation-list clearfix">
+            <li class="nav-list-item">
+              <a class="nav-item-link" href="#">Home</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-item-link" href="#">About Us</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-item-link" href="#">Page</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-item-link" href="#">Shop</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-item-link" href="#">Blog</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-item-link" href="#">Contact us</a>
+            </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main>
-        <section class="slider">
-          <img class="slider-picture" src="./img/slider/slider-pic.png " alt="some girls" width="1600" height="600">
-              <div class="slider-items container clearfix">
-                  <h2 class="slider-title">AFFORDABLE PARIS TOURS</h2>
-                  <p class="slider-description">CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
+      <section class="slider">
+        <img
+          class="slider-picture"
+          src="./img/slider/slider-pic.png "
+          alt="some girls"
+          width="1600"
+          height="600"
+        />
+        <div class="slider-items container clearfix">
+          <h2 class="slider-title">AFFORDABLE PARIS TOURS</h2>
+          <p class="slider-description">
+            CITY TOURS / TOUR TICKETS / TOUR GUIDES
+          </p>
+        </div>
+        <div class="button-wrapper container clearfix">
+          <button class="slider-button prev">
+            <i class="pe-7s-angle-left pe-5x pe-va"></i>
+          </button>
+          <button class="slider-button next">
+            <i class="pe-7s-angle-right pe-5x pe-va"></i>
+          </button>
+        </div>
+      </section>
+      <section class="collection-section clearfix">
+        <div class="container">
+          <h3 class="collection-title">NEW COLLECTION</h3>
+          <ul class="collection-list clearfix">
+            <li class="collection-list-item">
+              <div class="collection-elements">
+                <div class="pictures-wrapper">
+                  <img
+                    class="collection-pictures"
+                    src="./img/collection/1.png"
+                    alt="Men's Blue Tshirt"
+                    width="255"
+                    height="280"
+                  />
+                  <div class="overlay">
+                    <ul class="button-list clearfix">
+                      <li class="button-item">
+                        <button class="button">
+                          <i class="pe-7s-like pe-3x pe-va"></i>
+                        </button>
+                      </li>
+                      <li class="button-item">
+                        <button class="button">
+                          <i class="pe-7s-shuffle pe-3x pe-va"></i>
+                        </button>
+                      </li>
+                      <li class="button-item">
+                        <button class="button">
+                          <i class="pe-7s-clock pe-3x pe-va"></i>
+                        </button>
+                      </li>
+                      <li class="button-item">
+                        <button class="button cart">
+                          <i class="pe-7s-cart pe-3x pe-va"></i
+                          ><span class="button-add">add to cart</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-              <div class="button-wrapper container clearfix">
-              <button class="slider-button prev"><i class="pe-7s-angle-left pe-5x pe-va"></i></button>
-              <button class="slider-button next"><i class="pe-7s-angle-right pe-5x pe-va"></i></button>
+                <div class="collection-item-options clearfix">
+                  <h4 class="collection-elements-name">
+                    <a class="collection-elements-link" href="#">Blue Tshirt</a>
+                  </h4>
+                  <div class="price">$26</div>
+                </div>
               </div>
-          </div>
-        </section>
-        <section class="collection-section clearfix ">
-          <div class="container">
-            <h3 class="collection-title">NEW COLLECTION</h3>
-            <ul class="collection-list clearfix">
-              <li class="collection-list-item">
-                <div class="collection-elements">
-                  <div class="pictures-wrapper">
-                    <img class="collection-pictures" src="./img/collection/1.png" alt="Men's Blue Tshirt" width="255" height="280">
-                    <div class="overlay">
-                      <ul class="button-list clearfix">
-                        <li class="button-item">
-                          <button class="button"><i class="pe-7s-like pe-3x pe-va"></i></button>
-                        </li>
-                        <li class="button-item">
-                          <button class="button"><i class="pe-7s-shuffle pe-3x pe-va"></i></button>
-                        </li>
-                        <li class="button-item">
-                          <button class="button"><i class="pe-7s-clock pe-3x pe-va"></i></button>
-                        </li>
-                        <li class="button-item">
-                          <button class="button cart"><i class="pe-7s-cart pe-3x pe-va"></i><span class="button-add">add to cart</span></button>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="collection-item-options">
-                    <a class="collection-elements-link" href="#">
-                     <h4 class="collection-elements-name">Blue Tshirt</h4>
-                    </a>
-                    <div class="price">
-                      <p class="collection-elements-price">$26</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="collection-list-item">
-                <div class="collection-elements">
-                  <div class="pictures-wrapper">
-                    <img class="collection-pictures" src="./img/collection/2.png" alt="Woman Shirt" width="255" height="280">
-                    <div class="overlay">
-                      <ul class="button-list clearfix">
-                        <li class="button-item">
-                          <button class="button"><i class="pe-7s-like pe-3x pe-va"></i></button>
-                        </li>
-                        <li class="button-item">
-                          <button class="button"><i class="pe-7s-shuffle pe-3x pe-va"></i></button>
-                        </li>
-                        <li class="button-item">
-                          <button class="button"><i class="pe-7s-clock pe-3x pe-va"></i></button>
-                        </li>
-                        <li class="button-item">
-                          <button class="button cart"><i class="pe-7s-cart pe-3x pe-va"></i><span class="button-add">add to
-                            cart</span></button>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="collection-item-options">
-                    <a class="collection-elements-link" href="#">
-                      <h4 class="collection-elements-name">Woman Shirt</h4>
-                    </a>
-                    <div class="price">
-                      <p class="collection-elements-price">$31</p>
-                    </div>
+            </li>
+            <li class="collection-list-item">
+              <div class="collection-elements">
+                <div class="pictures-wrapper">
+                  <img
+                    class="collection-pictures"
+                    src="./img/collection/2.png"
+                    alt="Woman Shirt"
+                    width="255"
+                    height="280"
+                  />
+                  <div class="overlay">
+                    <ul class="button-list clearfix">
+                      <li class="button-item">
+                        <button class="button">
+                          <i class="pe-7s-like pe-3x pe-va"></i>
+                        </button>
+                      </li>
+                      <li class="button-item">
+                        <button class="button">
+                          <i class="pe-7s-shuffle pe-3x pe-va"></i>
+                        </button>
+                      </li>
+                      <li class="button-item">
+                        <button class="button">
+                          <i class="pe-7s-clock pe-3x pe-va"></i>
+                        </button>
+                      </li>
+                      <li class="button-item">
+                        <button class="button cart">
+                          <i class="pe-7s-cart pe-3x pe-va"></i
+                          ><span class="button-add">add to cart</span>
+                        </button>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              </li>
-              <li class="collection-list-item">
-                <div class="collection-elements">
-                  <div class="pictures-wrapper">
-                    <img class="collection-pictures" src="./img/collection/3.png" alt="Men's Yellow Tshirt" width="255" height="280">
-                    <div class="overlay">
-                      <ul class="button-list clearfix">
-                        <li class="button-item">
-                          <button class="button"><i class="pe-7s-like pe-3x pe-va"></i></button>
-                        </li>
-                        <li class="button-item">
-                          <button class="button"><i class="pe-7s-shuffle pe-3x pe-va"></i></button>
-                        </li>
-                        <li class="button-item">
-                          <button class="button"><i class="pe-7s-clock pe-3x pe-va"></i></button>
-                        </li>
-                        <li class="button-item">
-                          <button class="button cart"><i class="pe-7s-cart pe-3x pe-va"></i><span class="button-add">add to
-                            cart</span></button>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="collection-item-options">
-                    <a class="collection-elements-link" href="#">
-                      <h4 class="collection-elements-name">Yellow Tshirt</h4>
-                    </a>
-                    <div class="price">
-                      <p class="collection-elements-price">$21</p>
-                    </div>
+                <div class="collection-item-options clearfix">
+                  <h4 class="collection-elements-name">
+                    <a class="collection-elements-link" href="#">Woman Shirt</a>
+                  </h4>
+                  <div class="price">$31</div>
+                </div>
+              </div>
+            </li>
+            <li class="collection-list-item">
+              <div class="collection-elements">
+                <div class="pictures-wrapper">
+                  <img
+                    class="collection-pictures"
+                    src="./img/collection/3.png"
+                    alt="Men's Yellow Tshirt"
+                    width="255"
+                    height="280"
+                  />
+                  <div class="overlay">
+                    <ul class="button-list clearfix">
+                      <li class="button-item">
+                        <button class="button">
+                          <i class="pe-7s-like pe-3x pe-va"></i>
+                        </button>
+                      </li>
+                      <li class="button-item">
+                        <button class="button">
+                          <i class="pe-7s-shuffle pe-3x pe-va"></i>
+                        </button>
+                      </li>
+                      <li class="button-item">
+                        <button class="button">
+                          <i class="pe-7s-clock pe-3x pe-va"></i>
+                        </button>
+                      </li>
+                      <li class="button-item">
+                        <button class="button cart">
+                          <i class="pe-7s-cart pe-3x pe-va"></i
+                          ><span class="button-add">add to cart</span>
+                        </button>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              </li> 
-              <li class="collection-list-item">
-                <div class="collection-elements">
-                  <div class="pictures-wrapper">
-                    <img class="collection-pictures" src="./img/collection/4.png" alt="Woman Lingerie" width="255" height="280">
-                    <div class="overlay">
-                      <ul class="button-list clearfix">
-                        <li class="button-item">
-                          <button class="button"><i class="pe-7s-like pe-3x pe-va"></i></button>
-                        </li>
-                        <li class="button-item">
-                          <button class="button"><i class="pe-7s-shuffle pe-3x pe-va"></i></button>
-                        </li>
-                        <li class="button-item">
-                          <button class="button"><i class="pe-7s-clock pe-3x pe-va"></i></button>
-                        </li>
-                        <li class="button-item">
-                          <button class="button cart"><i class="pe-7s-cart pe-3x pe-va"></i><span class="button-add">add to
-                            cart</span></button>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="collection-item-options">
-                    <a class="collection-elements-link" href="#">
-                      <h4 class="collection-elements-name">Cool Lingerie</h4>
-                    </a>
-                    <div class="price">
-                      <p class="collection-elements-price">$56</p>
-                    </div>
+                <div class="collection-item-options clearfix">
+                  <h4 class="collection-elements-name">
+                    <a class="collection-elements-link" href="#"
+                      >Yellow Tshirt</a
+                    >
+                  </h4>
+                  <div class="price">$21</div>
+                </div>
+              </div>
+            </li>
+            <li class="collection-list-item">
+              <div class="collection-elements">
+                <div class="pictures-wrapper">
+                  <img
+                    class="collection-pictures"
+                    src="./img/collection/4.png"
+                    alt="Woman Lingerie"
+                    width="255"
+                    height="280"
+                  />
+                  <div class="overlay">
+                    <ul class="button-list clearfix">
+                      <li class="button-item">
+                        <button class="button">
+                          <i class="pe-7s-like pe-3x pe-va"></i>
+                        </button>
+                      </li>
+                      <li class="button-item">
+                        <button class="button">
+                          <i class="pe-7s-shuffle pe-3x pe-va"></i>
+                        </button>
+                      </li>
+                      <li class="button-item">
+                        <button class="button">
+                          <i class="pe-7s-clock pe-3x pe-va"></i>
+                        </button>
+                      </li>
+                      <li class="button-item">
+                        <button class="button cart">
+                          <i class="pe-7s-cart pe-3x pe-va"></i
+                          ><span class="button-add">add to cart</span>
+                        </button>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              </li>   
-            </ul>
-          </div>
-        </section>
+                <div class="collection-item-options clearfix">
+                  <h4 class="collection-elements-name">
+                    <a class="collection-elements-link" href="#"
+                      >Cool Lingerie</a
+                    >
+                  </h4>
+                  <div class="price">$56</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="company-information">
       <div class="container">
-        <p class="legal-info">All Rights Reserved © Dokan | Designed <a class="desiner-link" href="#">ThemenGraph</a> </p>
-        
+        <p class="legal-info">
+          All Rights Reserved © Dokan | Designed
+          <a class="desiner-link" href="#">ThemenGraph</a>
+        </p>
       </div>
     </footer>
   </body>
