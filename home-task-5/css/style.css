@@ -90,7 +90,8 @@ img {
 .nav-item-link {
   color: #0f0101;
 }
-.nav-list-item :hover {
+.nav-list-item :hover,
+.nav-list-item :focus {
   color: #1abc9c;
 }
 
@@ -102,7 +103,7 @@ img {
   object-fit: cover;
 }
 
-.wrapper {
+.slider {
   position: relative;
 }
 .slider::before {
@@ -116,45 +117,48 @@ img {
 }
 .button-wrapper {
   position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-.slider-button-prev {
-  float: left;
-  width: 108px;
-  height: 108px;
-  border: none;
-  background-color: #4dc5ab;
-  color: #ffffff;
-}
-
-.slider-button-next {
-  float: right;
-  width: 108px;
-  height: 108px;
-  border: none;
-  background-color: #4dc5ab;
-  color: #ffffff;
-}
-
-.slider-items {
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.slider-title {
+.slider-button {
+  width: 104px;
+  height: 104px;
+  border: none;
+  background-color: rgba(78, 198, 171, 0.6);
+  color: #ffffff;
+}
+
+.prev {
   float: left;
-  max-width: 900px;
-  font-family: "Roboto", sans-serif;
+}
+
+.next {
+  float: right;
+}
+
+.slider-items {
+  position: absolute;
+  max-width: 790px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-button:hover,
+.slider-button:focus {
+  background-color: rgb(26, 188, 156);
+  cursor: pointer;
+}
+
+.slider-title {
   font-size: 60px;
-  letter-spacing: -2px;
+  letter-spacing: -1.2px;
   line-height: 82px;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
-  font-weight: 800;
+  font-weight: 900;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -277,6 +281,7 @@ img {
   background-color: #1abc9c;
   cursor: pointer;
 }
+
 .button {
   display: block;
   border: 1px solid;
@@ -284,10 +289,16 @@ img {
   width: 50px;
   height: 50px;
   color: #ffffff;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
 }
 .cart {
   width: 166px;
   background-color: #323232;
+}
+.cart i {
+  padding-top: 3px;
 }
 
 .button-add {
@@ -298,7 +309,9 @@ img {
   line-height: 32px;
   font-weight: 400;
   letter-spacing: -0.2;
+  padding-left: 10px;
 }
+
 .pictures-wrapper {
   position: relative;
 }
@@ -319,4 +332,26 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.company-information {
+  height: 88px;
+  background-color: rgb(50, 50, 50);
+  padding-top: 31px;
+  padding-bottom: 31px;
+}
+
+.legal-info {
+  font-size: 16px;
+  font-family: "OpenSans", sans-serif;
+  color: rgb(254, 254, 254);
+  line-height: 1.75;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+.desiner-link {
+  text-transform: none;
+  color: #46bfa9;
 }
