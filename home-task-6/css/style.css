@@ -6,6 +6,7 @@
   --secondary-font-color: #999999;
 }
 
+/*
 .Amazing_Services {
   font-size: 30px;
   font-family: "Montserrat";
@@ -19,6 +20,7 @@
   top: 217.5px;
   z-index: 50;
 }
+*/
 
 html {
   box-sizing: border-box;
@@ -55,4 +57,79 @@ img {
   display: table;
   content: "";
   clear: both;
+}
+
+/*header-style*/
+.site-logo {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.site-logo-link {
+  color: rgb(149, 225, 211);
+}
+
+.nav-list {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.nav-list-item-link {
+  color: rgb(149, 225, 211);
+}
+
+/*servises-container-style*/
+
+.italics-title-part {
+  font-size: 24px;
+  font-family: "Kaushan Script", cursive;
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+  font-weight: 400;
+}
+.title-part {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.section-item-title {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.servises-item-decr {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/*team-style*/
+.about-team {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+}
+
+.team-position {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(153, 153, 153);
+  font-style: italic;
+  line-height: 1.6;
+  font-weight: 300;
 }
