@@ -1,0 +1,127 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+/* header-style */
+.page-header {
+  padding: 50px 0;
+}
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.page-menu-list {
+  display: flex;
+  text-transform: uppercase;
+}
+
+.menu-list-items:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* services-style */
+.services {
+  padding: 100px 0 50px;
+}
+
+.sections-header {
+  text-align: center;
+  margin-bottom: 78px;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.services-list-items {
+  width: 290px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.services-items-title::before {
+  display: block;
+  content: "";
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(254, 209, 54);
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.commerce-img::before {
+  background-image: url("../img/Icon-Basket.png");
+}
+.responsive-img::before {
+  background-image: url("../img/Icon-Laptop.png");
+}
+.security-img::before {
+  background-image: url("../img/Icon-Locked.png");
+}
+
+/* contact-us-style */
+.contact-us {
+  padding-top: 50px;
+  background-color: rgb(34, 34, 34);
+  /* background-image: url("../img/Map-Image.jpg"); */
+  background-image: url("../img/images/Map-Image.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 100px;
+}
+/*
+.Background {
+  background-color: 
+  position: absolute;
+  left: -2px;
+  top: 642px;
+  width: 1402px;
+  height: 677px;
+  z-index: 3;
+}
+.Map_Image {
+  background-image: url("Map Image.png");
+  opacity: 0.302;
+  position: absolute;
+  left: 786px;
+  top: 762px;
+  width: 614px;
+  height: 537px;
+  z-index: 4;
+}*/
