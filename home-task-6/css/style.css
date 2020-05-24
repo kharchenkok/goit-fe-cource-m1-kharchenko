@@ -339,6 +339,8 @@ img {
 .footer-form {
   display: flex;
   object-position: right;
+  max-width: 380px;
+  justify-content: space-between;
 }
 
 .submit-button {
@@ -354,13 +356,7 @@ img {
 
 .submit-button:hover {
   font-weight: 900;
-  box-shadow: 5px 5px rgb(204, 204, 204);
 }
-
-/*
-.input::placeholder {
-  border: 1px solid rgb(229, 229, 229);
-}*/
 
 .placeholder-input-place {
   border: 1px solid rgb(229, 229, 229);
@@ -371,4 +367,5 @@ img {
   font-size: 15px;
   line-height: 1.6;
   text-align: left;
+  width: 229px;
 }
