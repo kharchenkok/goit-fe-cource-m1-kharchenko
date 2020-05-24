@@ -339,7 +339,7 @@ img {
 .footer-form {
   display: flex;
   object-position: right;
-  max-width: 380px;
+  width: 380px;
   justify-content: space-between;
 }
 
@@ -358,8 +358,7 @@ img {
   font-weight: 900;
 }
 
-.placeholder-input-place {
-  border: 1px solid rgb(229, 229, 229);
+.footer-form input::placeholder {
   color: rgb(204, 204, 204);
   font-family: var(--minor-font-family);
   font-style: italic;
@@ -367,5 +366,10 @@ img {
   font-size: 15px;
   line-height: 1.6;
   text-align: left;
-  width: 229px;
+  padding-left: 15px;
+}
+
+.placeholder-input-place {
+  border: 1px solid rgb(229, 229, 229);
+  width: 230px;
 }
