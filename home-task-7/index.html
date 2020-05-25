@@ -72,67 +72,55 @@
       <!-- contact-us-container -->
       <section class="contact-us">
         <header class="sections-header container">
-          <h2 class="section-title">Contact us</h2>
+          <h2 class="section-title contact-us-title">Contact us</h2>
           <div class="services-about">
             Proin iaculis purus consequat sem cure.
           </div>
         </header>
-        <!--  
-        <div class="container">
-          <ul class="services-list">
-            <li class="services-list-items">
-              <h3 class="services-items-title commerce-img">E-Commerce</h3>
-              <p class="services-items-about">
-                Proin iaculis purus consequat sem cure digni ssim. Donec
-                porttitora entum suscipit aenean rhoncus posuere odio in
-                tincidunt.
-              </p>
-            </li>
-            <li class="services-list-items">
-              <h3 class="services-items-title responsive-img">
-                Responsive Web
-              </h3>
-              <p class="services-items-about">
-                Proin iaculis purus consequat sem cure digni ssim. Donec
-                porttitora entum suscipit aenean rhoncus posuere odio in
-                tincidunt.
-              </p>
-            </li>
-            <li class="services-list-items">
-              <h3 class="services-items-title commerce-img">E-Commerce</h3>
-              <p class="services-items-about">
-                Proin iaculis purus consequat sem cure digni ssim. Donec
-                porttitora entum suscipit aenean rhoncus posuere odio in
-                tincidunt.
-              </p>
-            </li>
-            <li class="services-list-items">
-              <h3 class="services-items-title commerce-img">E-Commerce</h3>
-              <p class="services-items-about">
-                Proin iaculis purus consequat sem cure digni ssim. Donec
-                porttitora entum suscipit aenean rhoncus posuere odio in
-                tincidunt.
-              </p>
-            </li>
-            <li class="services-list-items">
-              <h3 class="services-items-title commerce-img">E-Commerce</h3>
-              <p class="services-items-about">
-                Proin iaculis purus consequat sem cure digni ssim. Donec
-                porttitora entum suscipit aenean rhoncus posuere odio in
-                tincidunt.
-              </p>
-            </li>
-            <li class="services-list-items">
-              <h3 class="services-items-title security-img">Web Security</h3>
-              <p class="services-items-about">
-                Proin iaculis purus consequat sem cure digni ssim. Donec
-                porttitora entum suscipit aenean rhoncus posuere odio in
-                tincidunt.
-              </p>
-            </li>
-          </ul>
-        </div>-->
-        <form action="#"></form>
+
+        <form action="#" class="contact-us-form container">
+          <div class="contact-us-form-input-wrapper">
+            <ul class="contact-us-input-list">
+              <li class="contact-us-input-list-items">
+                <input
+                  type="text"
+                  name="user_name"
+                  class="contact-us-form-input"
+                  placeholder="Your Name *"
+                  required
+                  minlength="2"
+                />
+              </li>
+              <li class="contact-us-input-list-items">
+                <input
+                  type="email"
+                  name="user_email"
+                  class="contact-us-form-input"
+                  placeholder="Your E-mail *"
+                  required
+                />
+              </li>
+              <li class="contact-us-input-list-items">
+                <input
+                  type="text"
+                  name="user_subject"
+                  class="contact-us-form-input"
+                  placeholder="Subject"
+                />
+              </li>
+            </ul>
+            <textarea
+              name="user_message"
+              class="contact-us-form-message"
+              required
+              minlength="10"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button class="contact-us-form-button">
+            Send Message
+          </button>
+        </form>
       </section>
     </main>
   </body>

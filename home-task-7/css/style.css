@@ -1,5 +1,69 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-slab-v11-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-slab-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* pinyon-script-regular - latin */
+@font-face {
+  font-family: "Pinyon Script";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Pinyon Script"), local("PinyonScript"),
+    url("../fonts/pinyon-script-v10-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/pinyon-script-v10-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* libre-baskerville-italic - latin */
+@font-face {
+  font-family: "Libre Baskerville";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Libre Baskerville Italic"), local("LibreBaskerville-Italic"),
+    url("../fonts/libre-baskerville-v7-latin-italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/libre-baskerville-v7-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+  --decoration-color: rgb(254, 209, 54);
+  --main-font-color: rgb(34, 34, 34);
+  --minor-font-color: rgb(119, 119, 119);
+  --input-font-color: rgb(187, 187, 187);
+  --main-font-family: "Montserrat", sans-serif;
+  --minor-font-family: "Roboto Slab", sans-serif;
+  --logo-font-family: "Pinyon Script", cursive;
+  --title-descr-font-family: "Libre Baskerville", cursive;
+}
+
 html {
   box-sizing: border-box;
+  font-size: 14px;
 }
 
 *,
@@ -40,13 +104,34 @@ img {
   flex-wrap: wrap;
 }
 
+.site-logo {
+  font-family: var(--logo-font-family);
+  font-size: 2.2rem;
+  line-height: 1.2;
+  letter-spacing: 1.3px;
+}
+
+.logo-link {
+  color: var(--decoration-color);
+}
 .page-menu-list {
   display: flex;
   text-transform: uppercase;
+  font-family: var(--main-font-family);
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .menu-list-items:not(:last-child) {
   margin-right: 40px;
+}
+.menu-items-link {
+  color: var(--main-font-color);
+  padding: 10px 0;
+}
+
+.menu-items-link:hover {
+  color: var(--decoration-color);
 }
 
 /* services-style */
@@ -59,6 +144,23 @@ img {
   margin-bottom: 78px;
 }
 
+.section-title {
+  font-family: var(--main-font-family);
+  font-size: 2.86rem;
+  text-transform: uppercase;
+  color: var(--main-font-color);
+  line-height: 1.2;
+  margin-bottom: 18px;
+  letter-spacing: 0.01px;
+}
+
+.services-about {
+  font-family: var(--title-descr-font-family);
+  font-size: 1.14rem;
+  color: var(--minor-font-color);
+  line-height: 1.2;
+}
+
 .services-list {
   display: flex;
   justify-content: space-between;
@@ -68,6 +170,25 @@ img {
   width: 290px;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.services-items-title {
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--main-font-color);
+  line-height: 1.2;
+  margin-bottom: 20px;
+  letter-spacing: -0.01px;
+}
+
+.services-items-about {
+  font-family: var(--minor-font-family);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: var(--minor-font-color);
+  letter-spacing: -0.01px;
 }
 
 .services-items-title::before {
@@ -102,26 +223,112 @@ img {
   /* background-image: url("../img/Map-Image.jpg"); */
   background-image: url("../img/images/Map-Image.png");
   background-repeat: no-repeat;
-  background-position: right;
-  background-position-y: 100px;
+  background-position: right 75px;
 }
-/*
-.Background {
-  background-color: 
-  position: absolute;
-  left: -2px;
-  top: 642px;
-  width: 1402px;
-  height: 677px;
-  z-index: 3;
+
+.contact-us-title {
+  color: rgb(255, 255, 255);
 }
-.Map_Image {
-  background-image: url("Map Image.png");
-  opacity: 0.302;
-  position: absolute;
-  left: 786px;
-  top: 762px;
-  width: 614px;
-  height: 537px;
-  z-index: 4;
-}*/
+
+.contact-us-form {
+  padding-bottom: 115px;
+}
+
+.contact-us-form-input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.contact-us-input-list {
+  display: flex;
+  width: 455px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-us-input-list-items:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.contact-us-form-input {
+  width: 455px;
+  height: 52px;
+  font-size: 1rem;
+  font-family: var(--main-font-family);
+  color: var(--main-font-color);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: left;
+  border: 1px solid var(--input-font-color);
+  padding-left: 20px;
+  letter-spacing: -0.01px;
+}
+
+.contact-us-form-input::placeholder {
+  text-transform: uppercase;
+  color: var(--input-font-color);
+}
+
+.contact-us-form-input:required:focus {
+  outline: none;
+}
+.contact-us-form-input:required:focus:valid {
+  color: rgba(133, 180, 45, 0.7);
+}
+
+.contact-us-form-input:required:focus:invalid {
+  color: rgba(180, 45, 44, 0.7);
+}
+
+.contact-us-form-message {
+  width: 455px;
+  font-size: 1rem;
+  font-family: var(--main-font-family);
+  color: var(--main-font-color);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: left;
+  border: 1px solid var(--input-font-color);
+  padding: 20px 0 0 20px;
+  resize: none;
+  letter-spacing: -0.01px;
+}
+
+.contact-us-form-message::placeholder {
+  text-transform: uppercase;
+  color: var(--input-font-color);
+}
+
+.contact-us-form-message:required:focus {
+  outline: none;
+}
+
+.contact-us-form-message:required:focus:valid {
+  color: rgba(133, 180, 45, 0.7);
+}
+
+.contact-us-form-message:required:focus:invalid {
+  color: rgba(180, 45, 44, 0.7);
+}
+
+.contact-us-form-button {
+  display: block;
+  font-family: var(--main-font-family);
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  background-color: var(--decoration-color);
+  width: 240px;
+  height: 66px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.contact-us-form-button:hover {
+  font-size: 1.5rem;
+}
