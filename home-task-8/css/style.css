@@ -280,7 +280,6 @@ img {
 .other-partner-link:hover {
   color: var(--header-main-font-color);
   background-color: var(--decoration-color);
-  border: none;
 }
 
 /*media*/
