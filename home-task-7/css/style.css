@@ -191,7 +191,7 @@ img {
   letter-spacing: -0.35px;
 }
 
-.services-items-title::before {
+.services-list-items::before {
   display: block;
   content: "";
   border-style: solid;
@@ -222,7 +222,7 @@ img {
   background-color: rgb(34, 34, 34);
   background-image: url("../img/images/Map-Image.png");
   background-repeat: no-repeat;
-  background-position: right 75px;
+  background-position: right 70px;
 }
 
 .contact-us-title {
@@ -273,11 +273,11 @@ img {
   outline: none;
 }
 .contact-us-form-input:required:focus:valid {
-  color: rgba(133, 180, 45, 0.7);
+  border: 3px solid rgba(133, 180, 45, 0.7);
 }
 
 .contact-us-form-input:required:focus:invalid {
-  color: rgba(180, 45, 44, 0.7);
+  border: 3px solid rgba(180, 45, 44, 0.7);
 }
 
 .contact-us-form-message {
@@ -289,7 +289,7 @@ img {
   line-height: 1.2;
   text-align: left;
   border: 1px solid var(--input-font-color);
-  padding: 20px 0 0 20px;
+  padding: 20px 20px 0 20px;
   resize: none;
   letter-spacing: -0.35px;
 }
@@ -304,11 +304,11 @@ img {
 }
 
 .contact-us-form-message:required:focus:valid {
-  color: rgba(133, 180, 45, 0.7);
+  border: 3px solid rgba(133, 180, 45, 0.7);
 }
 
 .contact-us-form-message:required:focus:invalid {
-  color: rgba(180, 45, 44, 0.7);
+  border: 3px solid rgba(180, 45, 44, 0.7);
 }
 
 .contact-us-form-button {
