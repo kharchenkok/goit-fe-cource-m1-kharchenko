@@ -365,6 +365,9 @@ img {
   .container {
     width: 942px;
   }
+  .page-header {
+    background-image: url("../img/bg-img/bg-img-dst.png");
+  }
   .partner-section {
     padding: 74px 0 74px;
   }
