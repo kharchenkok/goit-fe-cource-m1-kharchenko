@@ -303,12 +303,14 @@ img {
     margin-bottom: 0;
   }
   .header-title-wrapper {
-    margin-bottom: 36px;
+    margin: 0 auto 36px;
   }
   .header-title {
-    font-size: 3.7rem;
+    font-size: 3.4rem;
+    letter-spacing: -1px;
     margin-bottom: 38px;
   }
+
   .header-title-description {
     font-size: 1.7rem;
   }
@@ -317,7 +319,6 @@ img {
     padding: 0;
     margin: 0 auto;
   }
-
   /* partner-section */
   .partner-section {
     padding: 76px 0 40px;
